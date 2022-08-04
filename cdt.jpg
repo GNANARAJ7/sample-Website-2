@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://learntoday.com/ -->
+<html lang="en-US" prefix="og: https://ogp.me/ns#" itemscope="" itemtype="http://schema.org/WebPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./cdt_files/analytics.js.download"></script><script type="text/javascript" async="" src="./cdt_files/js"></script><script type="text/javascript" async="" src="./cdt_files/analytics.js.download"></script><script src="./cdt_files/978400639437002" async=""></script><script src="./cdt_files/255058650159013" async=""></script><script async="" src="./cdt_files/fbevents.js.download"></script><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();
+</script>
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Search Engine Optimization by Rank Math - https://s.rankmath.com/home -->
+<title>Home - LearnToday Digital Pvt. Ltd.</title><link rel="preload" as="style" href="./cdt_files/css"><link rel="stylesheet" href="./cdt_files/css" media="all" onload="this.media=&#39;all&#39;"><noscript><link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPT%20Serif%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" /></noscript><link rel="stylesheet" href="./cdt_files/aea771c0e5a9dca622e647359a513af2.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all" data-minify="1">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="https://learntoday.com/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Home - LearnToday Digital Pvt. Ltd.">
+<meta property="og:description" content="Accelerating Education​​ Learn Digital Marketing and other Skills with a unique training program that rewards you for assignment completions and competing with your fellow students. Enrolment is by application only.…">
+<meta property="og:url" content="https://learntoday.com/">
+<meta property="og:site_name" content="LearnToday Digital Pvt. Ltd.">
+<meta property="og:updated_time" content="2021-08-05T20:47:06+00:00">
+<meta property="article:published_time" content="2021-01-11T11:21:58+00:00">
+<meta property="article:modified_time" content="2021-08-05T20:47:06+00:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Home - LearnToday Digital Pvt. Ltd.">
+<meta name="twitter:description" content="Accelerating Education​​ Learn Digital Marketing and other Skills with a unique training program that rewards you for assignment completions and competing with your fellow students. Enrolment is by application only.…">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="Deepak Kanakaraju">
+<meta name="twitter:label2" content="Time to read">
+<meta name="twitter:data2" content="2 minutes">
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://learntoday.com/#person","name":"deepak@learntoday.com","logo":{"@type":"ImageObject","@id":"https://learntoday.com/#logo","url":"https://learntoday.com/wp-content/uploads/2021/01/cropped-LT-Logo-Long.png","caption":"deepak@learntoday.com","inLanguage":"en-US"},"image":{"@type":"ImageObject","@id":"https://learntoday.com/#logo","url":"https://learntoday.com/wp-content/uploads/2021/01/cropped-LT-Logo-Long.png","caption":"deepak@learntoday.com","inLanguage":"en-US"}},{"@type":"WebSite","@id":"https://learntoday.com/#website","url":"https://learntoday.com","name":"deepak@learntoday.com","publisher":{"@id":"https://learntoday.com/#person"},"inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":"https://learntoday.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://learntoday.com/wp-content/uploads/2021/08/Home-image-768x579.webp","url":"https://learntoday.com/wp-content/uploads/2021/08/Home-image-768x579.webp","width":"200","height":"200","inLanguage":"en-US"},{"@type":"Person","@id":"https://learntoday.com/#author","name":"Deepak Kanakaraju","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/e6a8fb112baba9d0659acaced11fa671?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/e6a8fb112baba9d0659acaced11fa671?s=96&amp;d=mm&amp;r=g","caption":"Deepak Kanakaraju","inLanguage":"en-US"},"sameAs":["https://learntoday.com"]},{"@type":"WebPage","@id":"https://learntoday.com/#webpage","url":"https://learntoday.com/","name":"Home - LearnToday Digital Pvt. Ltd.","datePublished":"2021-01-11T11:21:58+00:00","dateModified":"2021-08-05T20:47:06+00:00","author":{"@id":"https://learntoday.com/#author"},"isPartOf":{"@id":"https://learntoday.com/#website"},"primaryImageOfPage":{"@id":"https://learntoday.com/wp-content/uploads/2021/08/Home-image-768x579.webp"},"inLanguage":"en-US"},{"@type":"Article","headline":"Home - LearnToday Digital Pvt. Ltd.","datePublished":"2021-01-11T11:21:58+00:00","dateModified":"2021-08-05T20:47:06+00:00","author":{"@id":"https://learntoday.com/#author"},"publisher":{"@id":"https://learntoday.com/#person"},"description":"Learn Digital Marketing and other Skills with a unique training program that rewards you for assignment completions and competing with your fellow students. Enrolment is by application only. Apply Today for the training program.","name":"Home - LearnToday Digital Pvt. Ltd.","@id":"https://learntoday.com/#richSnippet","isPartOf":{"@id":"https://learntoday.com/#webpage"},"image":{"@id":"https://learntoday.com/wp-content/uploads/2021/08/Home-image-768x579.webp"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://learntoday.com/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="LearnToday Digital Pvt. Ltd. » Feed" href="https://learntoday.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="LearnToday Digital Pvt. Ltd. » Comments Feed" href="https://learntoday.com/comments/feed/">
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	
+<style id="wp-block-library-theme-inline-css">
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code>code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group:where(.has-background){padding:1.25em 2.375em}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+
+<!--[if IE]>
+<link rel='stylesheet' id='sinatra-ie-css'  href='https://learntoday.com/wp-content/themes/sinatra/assets/css/compatibility/ie.min.css?ver=1.2.1' media='all' />
+<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+<script src="./cdt_files/jquery.min.js.download" id="jquery-core-js"></script>
+<script src="./cdt_files/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+<!--[if IE]>
+<script src='https://learntoday.com/wp-content/themes/sinatra/assets/js/vendors/flexibility.min.js?ver=1.2.1' id='sinatra-flexibility-js'></script>
+<script id='sinatra-flexibility-js-after'>
+flexibility(document.documentElement);</script>
+<![endif]-->
+<link rel="https://api.w.org/" href="https://learntoday.com/wp-json/"><link rel="alternate" type="application/json" href="https://learntoday.com/wp-json/wp/v2/pages/37"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://learntoday.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://learntoday.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.9.3">
+<link rel="shortlink" href="https://learntoday.com/">
+<link rel="alternate" type="application/json+oembed" href="https://learntoday.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flearntoday.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://learntoday.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flearntoday.com%2F&amp;format=xml">
+<!-- HFCM by 99 Robots - Snippet # 1: Facebook Domain code -->
+<meta name="facebook-domain-verification" content="uug5ail61s4thxc9rdh7olvjmd3ngn">
+<!-- /end HFCM by 99 Robots -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./cdt_files/js(1)"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-187319370-1');
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '255058650159013');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=255058650159013&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<link rel="preload" as="font" href="https://learntoday.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0" crossorigin=""><meta name="theme-color" content="#3857F1"><style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><script id="google_gtagjs" src="./cdt_files/js(2)" async=""></script>
+<script id="google_gtagjs-inline">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-187281755-1', {} );
+</script>
+<link rel="icon" href="https://cdn.shortpixel.ai/spai/q_lossy+ret_img/https://learntoday.com/wp-content/uploads/2021/08/cropped-Favicon-32x32.png" data-spai-egr="1" sizes="32x32">
+<link rel="icon" href="https://cdn.shortpixel.ai/spai/q_lossy+ret_img/https://learntoday.com/wp-content/uploads/2021/08/cropped-Favicon-192x192.png" data-spai-egr="1" sizes="192x192">
+<link rel="apple-touch-icon" href="https://cdn.shortpixel.ai/spai/q_lossy+ret_img/https://learntoday.com/wp-content/uploads/2021/08/cropped-Favicon-180x180.png" data-spai-egr="1">
+<meta name="msapplication-TileImage" content="https://learntoday.com/wp-content/uploads/2021/08/cropped-Favicon-270x270.png">
+<script>
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script>	<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '255058650159013');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=255058650159013&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<link href="https://cdn.shortpixel.ai/" rel="preconnect" crossorigin=""><meta name="facebook-domain-verification" content="uug5ail61s4thxc9rdh7olvjmd3ngn"><script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '978400639437002');
+fbq('track', 'PageView');
+</script><link href="./cdt_files/jquery.min.js.download" rel="preload" as="script"><link href="./cdt_files/jquery-migrate.min.js.download" rel="preload" as="script"><link href="./cdt_files/ai-2.0.min.js.download" rel="preload" as="script"><link href="./cdt_files/sinatra.min.js.download" rel="preload" as="script"><link href="./cdt_files/webpack.runtime.min.js.download" rel="preload" as="script"><link href="./cdt_files/frontend-modules.min.js.download" rel="preload" as="script"><link href="./cdt_files/waypoints.min.js.download" rel="preload" as="script"><link href="./cdt_files/core.min.js.download" rel="preload" as="script"><link href="./cdt_files/swiper.min.js.download" rel="preload" as="script"><link href="./cdt_files/share-link.min.js.download" rel="preload" as="script"><link href="./cdt_files/dialog.min.js.download" rel="preload" as="script"><link href="./cdt_files/frontend.min.js.download" rel="preload" as="script"><link href="./cdt_files/preloaded-modules.min.js.download" rel="preload" as="script"><link href="./cdt_files/js(1)" rel="preload" as="script"><link href="./cdt_files/js(2)" rel="preload" as="script"></head>
+
+	
+<!-- Facebook Pixel Code -->
+
+<body data-rsssl="1" class="home page-template page-template-page-templates page-template-template-sinatra-fullwidth page-template-page-templatestemplate-sinatra-fullwidth-php page page-id-37 wp-custom-logo wp-embed-responsive sinatra-topbar__separators-regular sinatra-layout__fw-contained sinatra-header-layout-3 sinatra-menu-animation-underline sinatra-header__separators-none si-page-title-align-left sinatra-no-sidebar entry-media-hover-style-1 sinatra-copyright-layout-1 si-input-supported validate-comment-form si-menu-accessibility elementor-default elementor-kit-7 elementor-page elementor-page-37 e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop" style="--si-screen-width:1519px;"><noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=978400639437002&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0.49803921568627"></fefuncr><fefuncg type="table" tableValues="0 0.49803921568627"></fefuncg><fefuncb type="table" tableValues="0 0.49803921568627"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 0.27843137254902"></fefuncg><fefuncb type="table" tableValues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0"></fefuncr><fefuncg type="table" tableValues="0 0.64705882352941"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.78039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.94901960784314"></fefuncg><fefuncb type="table" tableValues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.098039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.66274509803922"></fefuncg><fefuncb type="table" tableValues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="https://learntoday.com/#content">Skip to content</a>
+
+	
+	<header id="masthead" class="site-header" role="banner" itemtype="https://schema.org/WPHeader" itemscope="itemscope">
+		<div id="sinatra-header">
+		<div id="sinatra-header-inner">
+	
+<div class="si-header-container">
+	<div class="si-logo-container">
+		<div class="si-container">
+
+			<div class="si-header-widgets si-header-element sinatra-widget-location-left"></div><!-- END .si-header-widgets -->
+<div class="sinatra-logo si-header-element" itemtype="https://schema.org/Organization" itemscope="itemscope">
+	<div class="logo-inner"><a href="https://learntoday.com/" rel="home" class="" itemprop="url">
+					<img src="./cdt_files/LT-Logo-Long-3.webp" alt="LearnToday Digital Pvt. Ltd." width="346" height="112" class="" srcset="https://learntoday.com/wp-content/uploads/2021/08/LT-Logo-Long-3.webp 1x, https://learntoday.com/wp-content/uploads/2021/08/LT-Logo-Long-3.webp 2x" itemprop="logo">
+				</a></div></div><!-- END .sinatra-logo -->
+<div class="si-header-widgets si-header-element sinatra-widget-location-right"></div><!-- END .si-header-widgets -->
+			<span class="si-header-element si-mobile-nav">
+						<button class="si-hamburger hamburger--spin si-hamburger-sinatra-primary-nav" aria-label="Menu" aria-controls="sinatra-primary-nav" type="button">
+
+			
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+
+		</button>
+					</span>
+
+		</div><!-- END .si-container -->
+	</div><!-- END .si-logo-container -->
+
+	<div class="si-nav-container">
+		<div class="si-container">
+
+			
+<nav class="site-navigation main-navigation sinatra-primary-nav sinatra-nav si-header-element" role="navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope" aria-label="Site Navigation" aria-haspopup="true">
+<ul id="sinatra-primary-nav" class="menu"><li id="menu-item-44" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44"><a href="https://learntoday.com/#home"><span>Home</span></a></li>
+<li id="menu-item-46" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="https://learntoday.com/#About"><span>About</span></a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://learntoday.com/#Service"><span>Service</span></a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48"><a href="https://learntoday.com/#Contact"><span>Contact</span></a></li>
+<li id="menu-item-49" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49"><a href="http://support.learntoday.com/support/home"><span>Helpdesk</span></a></li>
+<li id="menu-item-544" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-544"><a href="https://learntoday.com/blog/"><span>Blog</span></a></li>
+</ul></nav><!-- END .sinatra-nav -->
+
+		</div><!-- END .si-container -->
+	</div><!-- END .si-nav-container -->
+</div><!-- END .si-header-container -->
+	</div><!-- END #sinatra-header-inner -->
+	</div><!-- END #sinatra-header -->
+			</header><!-- #masthead .site-header -->
+
+	
+		<div id="main" class="site-main">
+
+		<article id="post-37" class="post-37 page type-page status-publish hentry" itemscope="" itemtype="https://schema.org/CreativeWork">
+	<div class="entry-content si-entry si-fullwidth-entry">
+				<div data-elementor-type="wp-page" data-elementor-id="37" class="elementor elementor-37">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-6676f3f5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6676f3f5" data-element_type="section">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-334ed472" data-id="334ed472" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-588fd308 elementor-widget elementor-widget-heading" data-id="588fd308" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Accelerating Education​​</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7d09e552 elementor-widget elementor-widget-text-editor" data-id="7d09e552" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Learn Digital Marketing and other Skills with a unique training program that rewards you for assignment completions and competing with your fellow students. Enrolment is by application only. Apply Today for the training program.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-467f5377 elementor-widget elementor-widget-button" data-id="467f5377" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://surveyninja.typeform.com/to/bhZ6w2m3" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Apply Today</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-2ebac9cb" data-id="2ebac9cb" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-a585f1b elementor-widget elementor-widget-image" data-id="a585f1b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="768" height="579" src="./cdt_files/Home-image-768x579.webp" class="attachment-medium_large size-medium_large" alt="" srcset="https://learntoday.com/wp-content/uploads/2021/08/Home-image-768x579.webp 768w, https://learntoday.com/wp-content/uploads/2021/08/Home-image-300x226.webp 300w, https://learntoday.com/wp-content/uploads/2021/08/Home-image.webp 770w" sizes="(max-width: 768px) 100vw, 768px">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4281cce7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4281cce7" data-element_type="section" id="About">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f8a2dcc" data-id="f8a2dcc" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1f77a05a elementor-widget elementor-widget-text-editor" data-id="1f77a05a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The LearnToday Team</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-fede42b elementor-widget elementor-widget-text-editor" data-id="fede42b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>We are a bunch of people who love digital marketing. We love creating campaigns that bring in results. We love delivering results. That’s why we exist. We help our clients with everything from PPC campaigns to content marketing to designing marketing funnels. We Learn &amp; We Teach. We learn to keep our and your marketing effective. We teach what we learned through our online, offline, and corporate training programs.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a39c469 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a39c469" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4fe92023" data-id="4fe92023" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-23883cf8 elementor-widget elementor-widget-image" data-id="23883cf8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/01-10.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-1b5cc22b elementor-widget elementor-widget-heading" data-id="1b5cc22b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Deepak Kanakaraju</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-53b9b3b8 elementor-widget elementor-widget-text-editor" data-id="53b9b3b8" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><span style="color: rgb(48, 55, 62); font-family: Poppins, sans-serif; font-size: 14px; text-align: center;">CEO</span><br></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-98eb3ba" data-id="98eb3ba" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-627910d3 elementor-widget elementor-widget-image" data-id="627910d3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/01-16.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-cd2e1a7 elementor-widget elementor-widget-heading" data-id="cd2e1a7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Vinodh David</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2c972bcd elementor-widget elementor-widget-text-editor" data-id="2c972bcd" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><font color="#30373e" face="Poppins, sans-serif"><span style="font-size: 14px;">CTO</span></font><br></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-1952e9ef" data-id="1952e9ef" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-16a99a46 elementor-widget elementor-widget-image" data-id="16a99a46" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/01-12.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-30e252ff elementor-widget elementor-widget-heading" data-id="30e252ff" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Vijay Kumar</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7dabd89 elementor-widget elementor-widget-text-editor" data-id="7dabd89" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><font color="#30373e" face="Poppins, sans-serif"><span style="font-size: 14px;">Copywriter</span></font><br></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7c07a7f6" data-id="7c07a7f6" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3160028c elementor-widget elementor-widget-image" data-id="3160028c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/01-07.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-7db5a977 elementor-widget elementor-widget-heading" data-id="7db5a977" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Krishna Prasanth</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-19b55912 elementor-widget elementor-widget-text-editor" data-id="19b55912" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><font color="#30373e" face="Poppins, sans-serif"><span style="font-size: 14px;">Operations</span></font><br></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6cadd83e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6cadd83e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-5de8de56" data-id="5de8de56" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1b03cc3c elementor-widget elementor-widget-image" data-id="1b03cc3c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/01-11.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-582b0f28 elementor-widget elementor-widget-heading" data-id="582b0f28" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Abhishek Sharma</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-56bd3402 elementor-widget elementor-widget-text-editor" data-id="56bd3402" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Performance Marketer</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-112b7a29" data-id="112b7a29" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-6fcceb5c elementor-widget elementor-widget-image" data-id="6fcceb5c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/01-08.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-5e864c19 elementor-widget elementor-widget-heading" data-id="5e864c19" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Divya Kothari</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2d44d4f elementor-widget elementor-widget-text-editor" data-id="2d44d4f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Digital Mentor</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-55f3099f" data-id="55f3099f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-99b8ad9 elementor-widget elementor-widget-image" data-id="99b8ad9" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/01-06.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-3bd03508 elementor-widget elementor-widget-heading" data-id="3bd03508" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Bhavya</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-4f03f19e elementor-widget elementor-widget-text-editor" data-id="4f03f19e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Graphic Designer</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-2b5a2328" data-id="2b5a2328" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1f08bcb7 elementor-widget elementor-widget-image" data-id="1f08bcb7" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/01-01.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-4e9654d6 elementor-widget elementor-widget-heading" data-id="4e9654d6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Preethi S</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3f087611 elementor-widget elementor-widget-text-editor" data-id="3f087611" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Digital Mentor</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7ae08f8b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7ae08f8b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-17525570" data-id="17525570" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7e16a7d7 elementor-widget elementor-widget-image" data-id="7e16a7d7" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/01-02.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2a75d700 elementor-widget elementor-widget-heading" data-id="2a75d700" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Susanta Sahu</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-188a6167 elementor-widget elementor-widget-text-editor" data-id="188a6167" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Head of Finance</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-14ff58d" data-id="14ff58d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-55d539b1 elementor-widget elementor-widget-image" data-id="55d539b1" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/01-05.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-729f0a9d elementor-widget elementor-widget-heading" data-id="729f0a9d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Karankumar Kharbanda</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-22e09d58 elementor-widget elementor-widget-text-editor" data-id="22e09d58" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Head of Support</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-1c49dda0" data-id="1c49dda0" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1ac34222 elementor-widget elementor-widget-image" data-id="1ac34222" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/01-04.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-17c6927c elementor-widget elementor-widget-heading" data-id="17c6927c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Harliien Man</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-11402b99 elementor-widget elementor-widget-text-editor" data-id="11402b99" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>HR Head</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-43d965ea" data-id="43d965ea" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5373b1c1 elementor-widget elementor-widget-image" data-id="5373b1c1" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/01-03.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-38a33ab4 elementor-widget elementor-widget-heading" data-id="38a33ab4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Kamna Jain</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5e478c80 elementor-widget elementor-widget-text-editor" data-id="5e478c80" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Digital Mentor</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5ad51f3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5ad51f3" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-e13cebb" data-id="e13cebb" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f955c37 elementor-widget elementor-widget-image" data-id="f955c37" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/Circle-team-13.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-399e92f elementor-widget elementor-widget-text-editor" data-id="399e92f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Jayant Kumar</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a832bcf elementor-widget elementor-widget-text-editor" data-id="a832bcf" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Digital Mentor</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7378ff9" data-id="7378ff9" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5845654 elementor-widget elementor-widget-image" data-id="5845654" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/Circle-team-14.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-cd363f6 elementor-widget elementor-widget-text-editor" data-id="cd363f6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Sangeeth Raj</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-4a081f3 elementor-widget elementor-widget-text-editor" data-id="4a081f3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Designer</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-454a77a" data-id="454a77a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-400affc elementor-widget elementor-widget-image" data-id="400affc" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/01-15.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2a3e5c9 elementor-widget elementor-widget-text-editor" data-id="2a3e5c9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Yash Amit Desai</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-fa42336 elementor-widget elementor-widget-text-editor" data-id="fa42336" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Digital Marketing Executive</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-075eec6" data-id="075eec6" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-96529b1 elementor-widget elementor-widget-image" data-id="96529b1" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="150" height="150" src="./cdt_files/01-18-10.webp" class="attachment-thumbnail size-thumbnail" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-ef14ea3 elementor-widget elementor-widget-text-editor" data-id="ef14ea3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Shreyas Umesh</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-3684bc6 elementor-widget elementor-widget-text-editor" data-id="3684bc6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Performance Marketer</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-deb5b48 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="deb5b48" data-element_type="section" id="Service" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;,&quot;animation_delay&quot;:500}">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-321cfaf6" data-id="321cfaf6" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ed8b640 elementor-widget elementor-widget-heading" data-id="ed8b640" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Join India's No.1 Digital Marketing<br>Training Program</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2da537f2 elementor-widget elementor-widget-text-editor" data-id="2da537f2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Learn Digital Marketing from Digital Deepak – India’s No.1 Digital Marketing Trainer. Here are the top features that you will get on the training program.</p>					</div>
+						</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-3ff36d3a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3ff36d3a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4f31ef4a" data-id="4f31ef4a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1d9a6b4 elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="1d9a6b4" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-grow">
+				<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="512" viewBox="0 0 511.926 511.926" width="512"><path d="m439.973 0h-22.01c-9.675 0-9.675 15 0 15h22.01c22.73 0 41.223 18.426 41.223 41.074v173.572c0 22.649-18.492 41.075-41.223 41.075h-24.963c-1.647 0-3.248.542-4.557 1.543l-45.806 35.038v-29.081c0-4.142-3.357-7.5-7.5-7.5h-91.28c-7.475 0-14.659-1.973-20.995-5.724v-84.192c0-15.77-8.032-29.703-20.229-37.946v-86.785c0-22.648 18.493-41.074 41.224-41.074h105.096c9.674 0 9.674-15 0-15h-105.096c-31.002 0-56.224 25.155-56.224 56.074v80.193c-3.434-.82-7.012-1.267-10.694-1.267h-137.296c-25.321 0-45.922 20.548-45.922 45.805v16.195c0 9.674 15 9.674 15 0v-16.195c0-16.986 13.871-30.805 30.922-30.805h137.297c17.051 0 30.923 13.819 30.923 30.805v87.178c-.09.662-.086 1.329 0 1.986v47.712c0 .943-.057 1.882-.142 2.816h-15.467c-17.043 0-31.251 12.301-34.197 28.468-.682.257-1.337.616-1.944 1.084l-33.545 25.901v-19.964c0-4.142-3.357-7.5-7.5-7.5h-75.425c-17.051 0-30.922-13.819-30.922-30.805v-75.681c0-9.674-15-9.674-15 0v75.682c0 25.257 20.601 45.805 45.922 45.805h67.926v27.73c0 6.016 7.305 9.625 12.084 5.937l37.835-29.213v84.375c0 19.125 15.597 34.683 34.767 34.683h46.025v17.501c0 6.014 7.305 9.627 12.083 5.937l30.356-23.438h8.968c19.17 0 34.767-15.559 34.767-34.683v-13.316c0-9.674-15-9.674-15 0v13.316c0 10.854-8.867 19.683-19.767 19.683h-11.527c-1.659 0-3.271.55-4.583 1.563l-20.298 15.671v-9.735c0-4.142-3.357-7.5-7.5-7.5h-53.525c-10.899 0-19.767-8.83-19.767-19.683v-97.134c0-10.854 8.867-19.683 19.767-19.683h97.433c10.899 0 19.767 8.83 19.767 19.683v36.819c0 9.674 15 9.674 15 0v-36.818c0-19.125-15.597-34.683-34.767-34.683h-66.91c.057-.937.086-38.818.086-38.818 6.613 2.659 13.703 4.041 20.995 4.041h83.78v36.76c0 6.001 7.274 9.614 12.057 5.957l55.846-42.717h22.423c31.001 0 56.223-25.155 56.223-56.075v-173.573c-.001-30.919-25.223-56.074-56.224-56.074z"></path><path d="m371.66 55.412c-9.523-2.431-19.227 5.093-19.227 14.933 0 10.751-3.918 21.112-11.027 29.169l-20.664 23.383c-1.338-2.053-3.65-3.412-6.283-3.412h-40.34c-4.143 0-7.5 3.358-7.5 7.5v90.765c0 4.142 3.357 7.5 7.5 7.5h40.34c3.031 0 5.635-1.801 6.818-4.387 8.167 4.99 17.631 7.688 27.26 7.688h71.292c10.894 0 19.881-9.453 19.37-20.319-.227-4.812.021-69.425.021-70.86 0-10.692-8.699-19.392-19.369-19.392l-37.073-.111 1.535-3.635c7.015-16.613 5.86-35.877-3.086-51.534-2.088-3.658-5.487-6.245-9.567-7.288-4.082-1.042 4.08 1.043 0 0-9.522-2.431 4.08 1.043 0 0zm-64.701 154.838h-25.34v-75.765h25.34zm112.87-77.271c2.422 0 4.392 1.97 4.392 4.392 0 1.427-.015 5.3-.035 10.551-.111 28.992-.185 56.45.029 61.014.078 1.647-.723 2.745-1.207 3.253-.838.878-1.967 1.361-3.179 1.361h-71.292c-8.498 0-16.815-2.945-23.421-8.292l-3.157-2.556v-58.531l30.691-34.729c9.533-10.804 14.783-24.689 14.783-39.098 0-.424.579-.534.771-.204 6.642 11.623 7.498 25.924 2.291 38.257l-5.919 14.019c-.977 2.313-.731 4.96.652 7.054 1.385 2.094 3.725 3.356 6.234 3.364z"></path><path d="m79.951 260.498c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h22.108l-4.13 24.979c-.676 4.086 2.09 7.947 6.176 8.623.415.069.826.102 1.232.102 3.604 0 6.783-2.605 7.391-6.278l4.534-27.425h18.093l-4.13 24.979c-.676 4.086 2.09 7.947 6.176 8.623.415.069.826.102 1.232.102 3.604 0 6.783-2.605 7.391-6.278l4.534-27.425h30.093c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-27.613l3.025-18.296h24.588c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-22.108l4.13-24.979c.676-4.086-2.09-7.947-6.176-8.623-4.091-.678-7.947 2.09-8.623 6.176l-4.534 27.425h-18.093l4.13-24.979c.676-4.086-2.09-7.947-6.176-8.623-4.096-.678-7.946 2.09-8.623 6.176l-4.534 27.425h-30.093c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h27.613l-3.025 18.296zm42.817-18.296h18.093l-3.025 18.296h-18.093z"></path><path d="m262.89 374.196c-6.056-4.986-14.113-6.953-22.195-4.988-10.357 2.515-20.808 12.197-20.808 28.156 0 9.933 3.625 18.555 11.082 26.359 6.091 6.375 14.881 12.437 28.499 19.657 1.099.583 2.306.874 3.513.874s2.414-.291 3.513-.874c23.758-12.595 39.58-25.24 39.58-46.016 0-16.046-10.822-25.629-21.548-28.008-8.058-1.788-15.87.11-21.636 4.84zm28.183 23.168c0 11.206-7.433 19.493-28.093 30.866-20.66-11.374-28.094-19.661-28.094-30.866 0-8.338 4.828-12.482 9.347-13.58.833-.202 1.725-.316 2.642-.316 3.399 0 7.136 1.57 9.44 6.037 1.313 2.542 3.967 4.118 6.814 4.059 2.859-.057 5.438-1.735 6.647-4.327 2.427-5.202 7.531-6.117 11.499-5.236 4.738 1.049 9.798 5.112 9.798 13.363z"></path></svg>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h3 class="elementor-icon-box-title">
+					<span>
+						Community Driven Training					</span>
+				</h3>
+									<p class="elementor-icon-box-description">
+						Make learning fun and engaging with community and interaction with your mentors and peers.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-210a458f" data-id="210a458f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7483bb67 elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="7483bb67" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-grow">
+				<svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" height="512" viewBox="0 0 512 512" width="512"><g><path d="m474.5 18.5h-437c-20.678 0-37.5 16.822-37.5 37.5v330c0 20.678 16.822 37.5 37.5 37.5h160.057l-9.027 31.594c-3.625 12.688-17.835 23.406-31.03 23.406h-56.5c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h310c4.142 0 7.5-3.357 7.5-7.5s-3.358-7.5-7.5-7.5h-56.5c-13.195 0-27.405-10.719-31.03-23.406l-9.027-31.594h160.057c20.678 0 37.5-16.822 37.5-37.5v-330c0-20.678-16.822-37.5-37.5-37.5zm-437 15h437c12.407 0 22.5 10.094 22.5 22.5v262.5h-482v-262.5c0-12.406 10.093-22.5 22.5-22.5zm271.547 425.715c2.058 7.205 6.149 13.824 11.512 19.285h-129.118c5.363-5.461 9.454-12.081 11.512-19.285l10.204-35.715h85.685zm165.453-50.715h-437c-12.407 0-22.5-10.094-22.5-22.5v-52.5h482v52.5c0 12.406-10.093 22.5-22.5 22.5z"></path><path d="m37.5 303.5h437c4.142 0 7.5-3.357 7.5-7.5v-240c0-4.143-3.358-7.5-7.5-7.5h-437c-4.142 0-7.5 3.357-7.5 7.5v105c0 4.143 3.358 7.5 7.5 7.5s7.5-3.357 7.5-7.5v-97.5h422v225h-422v-97.5c0-4.143-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v105c0 4.143 3.358 7.5 7.5 7.5z"></path><path d="m256 348.5c-12.407 0-22.5 10.094-22.5 22.5s10.093 22.5 22.5 22.5 22.5-10.094 22.5-22.5-10.093-22.5-22.5-22.5zm0 30c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5-3.364 7.5-7.5 7.5z"></path></g></svg>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h3 class="elementor-icon-box-title">
+					<span>
+						Weekly Live Q&amp;A Webinars					</span>
+				</h3>
+									<p class="elementor-icon-box-description">
+						Our courses are interactive and engaging with live Q&amp;A Webinars with mentors. Clear every doubt.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-38a4c199" data-id="38a4c199" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-786e69fd elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="786e69fd" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-grow">
+				<svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" height="512" viewBox="0 0 512.002 512.002" width="512"><g><path d="m448.774 297.352h-48c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h48c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z"></path><path d="m448.774 328.181h-48c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h48c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z"></path><path d="m448.774 266.523h-48c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h48c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z"></path><path d="m339.057 256.769c-6.689 0-12.131 5.442-12.131 12.131v7.107h-17.598c-6.688 0-12.13 5.442-12.13 12.13v6.414h-17.646c-6.688 0-12.13 5.442-12.13 12.13v35.124c0 6.138 4.993 11.131 11.13 11.131h82.021c6.137 0 11.13-4.993 11.13-11.131v-72.905c0-6.689-5.441-12.131-12.13-12.131zm-41.859 81.167h-14.776v-28.385h14.776zm29.728 0h-14.728c0-9.127 0-37.624 0-46.929h14.728zm29.776 0h-14.728c0-48.509-.049-63.931-.049-66.167h14.776v66.167z"></path><path d="m18.445 476.57h126.722c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-77.065v-100.757c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v100.757h-34.657c-1.899 0-3.445-1.545-3.445-3.445v-106.157c0-23.734 16.808-39.292 28.143-43.985l48.768-19.046 29.025 29.024c10.642 10.645 25.481 17.294 41.731 17.293 15.665-.001 30.648-6.213 41.732-17.292l28.616-28.617v99.261c0 10.613 8.634 19.247 19.246 19.247h4.971v53.719h-77.065c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h126.722c10.171 0 18.445-8.274 18.445-18.445v-50.274h31.13v22.999c-9.277 3.137-15.978 11.919-15.978 22.242 0 12.946 10.532 23.478 23.478 23.478s23.478-10.532 23.478-23.478c0-10.323-6.7-19.105-15.978-22.242v-22.999h104.202c10.612 0 19.246-8.634 19.246-19.247v-66.252c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v66.252c0 2.342-1.905 4.247-4.246 4.247h-157.832-65.572c-2.341 0-4.246-1.905-4.246-4.247 0-4.725 0-170.623 0-175.348h231.896v74.096c0 4.142 3.357 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-74.096h.005c9.421 0 17.085-7.665 17.085-17.086v-14.456c0-9.421-7.664-17.085-17.085-17.085h-236.421c-1.536-8.178-6.163-15.469-12.736-20.241.717-1.996 1.128-4.137 1.128-6.377v-48.445c0-15.866-13.747-27.513-27.929-26.424-1.765.137-3.75-.767-4.139-2.753-3.285-16.795-13.837-24.96-32.258-24.96h-63.65c-27.459 0-49.798 22.339-49.798 49.798v46.421c0 6.504 2.468 12.442 6.514 16.93-5.831 5.91-9.364 13.864-9.364 22.054 0 15.291 11.935 28.898 28.783 30.797 2.41 17.226 11.648 33.875 26.502 44.956v14.87c-8.437 3.296-74.998 29.291-83.934 32.781-.042.017-.084.034-.126.051-18.055 7.431-37.489 28.713-37.489 57.879v106.158c0 10.17 8.274 18.444 18.445 18.444zm345.519-31.955c4.675 0 8.478 3.803 8.478 8.478s-3.803 8.478-8.478 8.478-8.478-3.803-8.478-8.478 3.803-8.478 8.478-8.478zm-91.732-36.763h38.102v50.274c0 1.899-1.546 3.445-3.445 3.445h-34.656v-53.719zm-129.144-92.197c8.948-9.009 5.698-5.737 14.674-14.773.01-.01.018-.021.027-.031.661-.67 1.287-1.511 1.67-2.131h6.288c.402.657 1.047 1.506 1.699 2.162l14.715 14.814c-12.292 6.092-26.794 6.076-39.073-.041zm-6.549-52.607c.007-.19.011-.381.011-.574v-7.701c15.472 6.174 34.761 7.176 52.191.118l.007 7.64c0 .143.003.286.008.429-8.7 8.638-12.465 12.376-20.909 20.76h-10.485c-5.279-5.239-16.578-16.457-20.823-20.672zm57.868 43.692c-1.44-1.449-12.47-12.554-14.128-14.224l17.391-17.267c10.573 4.095 9.995 3.871 20.347 7.88zm38.609-33.888-29.268-11.334-.013-15.053c11.283-8.413 19.855-20.268 24.144-33.998 1.621.512 3.344.791 5.132.791h.005zm261.901-93.223c1.149 0 2.085.936 2.085 2.085v14.456c0 1.15-.936 2.086-2.085 2.086-12.603 0-249.057 0-261.906 0-1.149 0-2.085-.936-2.085-2.086 0-8.243 0-6.46 0-14.456 0-1.15.936-2.086 2.085-2.086 15.46.001 246.645.001 261.906.001zm-259.619-24.158c3.516 1.952 6.277 5.278 7.704 9.157h-9.991c-.68 0-1.627.07-2.085.126v-8.032c1.486-.235 3.176-.744 4.372-1.251zm-140.889 30.66c-7.471-1.78-13.145-7.985-13.145-15.498 0-5.487 3.312-11.01 8.286-14.149 1.182.231 2.392.384 3.625.444.411.021.822.031 1.233.032v29.171zm.015-44.172c-5.558 0-10.31-4.532-10.31-10.31v-46.42c0-19.188 15.61-34.798 34.798-34.798h63.65c13.895 0 16.163 5.815 17.537 12.839 1.798 9.194 10.413 15.567 20.01 14.83 5.556-.424 11.778 4.439 11.778 11.468v48.442c0 2.158-1.863 3.949-3.949 3.949-7.987 0-14.342-6.597-14.342-14.342 0-8.973-12.041-11.927-16.233-4.078-6.074 11.361-17.838 18.419-30.698 18.419-10.479.001-61.745.001-72.241.001zm14.985 50.452v-35.452h57.256c13.449 0 26.316-5.435 35.66-15.038 3.069 5.474 7.848 9.859 13.601 12.452v38.037c0 29.227-23.885 52.391-52.392 52.391-32.67.001-54.125-25.387-54.125-52.39zm17.965 82.675c11.399 11.318 7.061 7.011 17.556 17.431-7.614 7.665-4.857 4.89-14.065 14.16l-23.698-23.698z"></path></g></svg>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h3 class="elementor-icon-box-title">
+					<span>
+						Do Assignments and Earn Rewards					</span>
+				</h3>
+									<p class="elementor-icon-box-description">
+						Our training programs incentivize and motivate you to learn through cash backs and rewards.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-411cb6c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="411cb6c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-72be7b81" data-id="72be7b81" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-54c694ce elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="54c694ce" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-grow">
+				<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="512" viewBox="0 0 512 512" width="512"><g><path d="m373.147 20.122-295.44-19.761c-9.631-.638-17.984 6.665-18.629 16.293l-2.311 34.557h-39.267c-9.649 0-17.5 7.851-17.5 17.5v425.466c0 9.649 7.851 17.5 17.5 17.5h226.141c1.96 0 3.902-.801 5.292-2.185l34.138-33.987c.347.074.701.133 1.065.157l58.282 3.898c9.302.614 18.005-6.952 18.629-16.293l28.393-424.515c.639-9.528-6.766-17.993-16.293-18.63zm-122.006 465.902v-52.1c0-1.378 1.122-2.5 2.5-2.5h51.9zm94.939-23.757c-.244 1.51-1.131 2.286-2.66 2.327l-46.28-3.096 31.752-31.611c1.414-1.407 2.209-3.32 2.209-5.315v-355.86c0-9.649-7.851-17.5-17.5-17.5h-77.993c-9.697 0-9.697 15 0 15h77.993c1.379 0 2.5 1.122 2.5 2.5v347.712h-62.46c-9.649 0-17.5 7.851-17.5 17.5v62.753h-218.641c-1.378 0-2.5-1.122-2.5-2.5v-425.465c0-1.378 1.122-2.5 2.5-2.5h178.168c9.697 0 9.697-15 0-15h-123.868l2.244-33.556c.244-1.511 1.131-2.286 2.661-2.327l295.44 19.76c1.511.244 2.287 1.131 2.328 2.661z"></path><path d="m267.827 237.047h-204.553c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z"></path><path d="m267.827 289.332h-204.553c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z"></path><path d="m55.774 192.262c0 4.142 3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-204.553c-4.142 0-7.5 3.358-7.5 7.5z"></path><path d="m91.807 139.977c0 4.142 3.358 7.5 7.5 7.5h132.487c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-132.487c-4.142 0-7.5 3.358-7.5 7.5z"></path><path d="m194.755 438.787c-13.489.036-26.978.065-40.467.086-4.534.007-9.067.013-13.6.016-8.215.006-13.75-1.643-15.59-10.679-1.556-7.64-12.364-6.613-14.464 0-5.19 16.337-13.774 9.936-18.582-1.053-4.797-10.963-6.027-23.233-8.122-34.9-1.54-8.573-14.506-6.17-14.732 1.994-.298 10.751-1.302 21.331-4.031 31.758-2.815 10.758-7.034 21.097-11.222 31.376-3.651 8.961 10.867 12.816 14.464 3.988 3.711-9.108 7.427-18.266 10.193-27.714 5.14 12.36 15.774 26.34 30.927 18.101 2.819-1.533 5.452-3.712 7.763-6.253 7.88 9.106 19.609 8.388 30.584 8.375 15.627-.02 31.254-.054 46.881-.095 9.649-.025 9.667-15.025-.002-15z"></path><path d="m505.932 246.439c-3.897-3.878-9.255-5.867-14.695-6.014l-5.668.028v-10.719c0-6.529-3.878-13.427-9.433-16.862v-15.098c0-31.069-48.372-30.934-48.372.146v15.1c-5.659 3.498-9.455 9.741-9.455 16.852v10.982c-24.966 1.7-25.037 39.745.028 41.232.16 33.575.152 66.6-.028 100.737-.049 9.414 14.949 9.966 15 .079.18-34.166.188-67.22.029-100.823l37.211-.185s-.048 110.848-.048 160.784c0 24.338-37.219 24.5-37.219-.253l.013-13.677c.585-9.68-14.387-10.583-14.973-.904v12.834c0 11 3.402 20.316 9.988 26.869.586 15.693 7.198 30.878 18.369 41.956 3.205 3.18 7.642 2.208 10.744-.182 11.365-11.385 17.769-26.394 18.169-42.414 4.951-4.931 9.908-9.896 9.908-26.896l.006-68.351c12.97 3.689 26.494-6.348 26.494-19.946v-90.672c0-5.523-2.155-10.709-6.068-14.603zm-72.623-5.727v-10.841c0-2.219 1.523-4.08 3.573-4.633l30.025-.149c.84.208 1.615.605 2.243 1.231.915.911 1.419 2.123 1.419 3.414v10.794zm18.671-52c4.604 0 9.155 4.514 9.155 9.062v12.166l-18.372.091v-12.111c.001-5.053 4.133-9.183 9.217-9.208zm-.011 303.901c-3.487-4.942-6.009-10.531-7.417-16.406 2.322.503 4.674.765 7.027.765 2.627 0 5.253-.326 7.839-.957-1.374 5.964-3.892 11.587-7.449 16.598zm45.031-140.899c0 7.101-11.452 7.66-11.452.131 0 0 .013-70.974.021-77.48.005-4.196-3.483-7.509-7.558-7.509l-58.389.29c-7.242 0-7.073-11.331.074-11.366l71.615-.355c3.463.295 5.359 2.168 5.688 5.617v90.672z"></path></g></svg>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h3 class="elementor-icon-box-title">
+					<span>
+						Get Assignment Feedback and Review					</span>
+				</h3>
+									<p class="elementor-icon-box-description">
+						Your mentor will review the assignments you are doing and give feedback on each assignment.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1bb9997f" data-id="1bb9997f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-53b147f elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="53b147f" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-grow">
+				<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 512 512"><defs><style>.cls-1{fill:#093287;}</style></defs><g id="Page-1"><g id="_001---Degree" data-name="001---Degree"><path id="Shape" class="cls-1" d="M500.64,86.34,261.79,1a17.51,17.51,0,0,0-11.65,0L11.35,86.34a17.07,17.07,0,0,0,0,32.11L128,160.13v53.2c0,33.18,114.9,34.14,128,34.14s128-1,128-34.14v-53.2L409.6,151v19.63a17.06,17.06,0,0,0,17.07,17.06h17.06a17.06,17.06,0,0,0,17.07-17.06v-25.6A25.34,25.34,0,0,0,458,133.71l42.66-15.26a17.07,17.07,0,0,0,0-32.11ZM366.93,194.56c-32.5-14.8-101-15.36-110.93-15.36s-78.43.56-110.93,15.36V120.22c5.12-6.57,45.36-17.82,110.93-17.82s105.81,11.25,110.93,17.82ZM256,230.4c-63.15,0-102.8-10.43-110.22-17.07,7.42-6.64,47.09-17.06,110.22-17.06s102.8,10.42,110.22,17.06C358.8,220,319.15,230.4,256,230.4Zm157.6-98.94L384,142V119.47c0-33.18-114.9-34.14-128-34.14s-128,1-128,34.14V142L17.07,102.4,256.12,17.07,426.67,78v43A25.58,25.58,0,0,0,413.6,131.46Zm30.13,39.21H426.67v-25.6a8.53,8.53,0,1,1,17.06,0Zm0-50V84.11l51.2,18.29Z"></path><path id="Shape-2" data-name="Shape" class="cls-1" d="M486.4,264.53a8.8,8.8,0,0,0-1.53.14A1429.2,1429.2,0,0,1,256,281.6,1429.2,1429.2,0,0,1,27.13,264.67a9.89,9.89,0,0,0-1.53-.14c-6,0-25.6,6.77-25.6,93.87s19.63,93.87,25.6,93.87a9.93,9.93,0,0,0,1.53-.16,1334.33,1334.33,0,0,1,175.78-16l-16.65,40A17,17,0,0,0,208.81,498l6.53-2.79,2.82,6.49A17,17,0,0,0,233.86,512h.21a17,17,0,0,0,15.64-10.65l14.82-35.48,14.77,35.34A17.08,17.08,0,0,0,295,512h.25a16.94,16.94,0,0,0,15.64-10.24l2.85-6.55,6.42,2.76a17,17,0,0,0,22.61-22L326.43,436.8a1301.36,1301.36,0,0,1,158.49,15.36,9.13,9.13,0,0,0,1.48.11c6,0,25.6-6.77,25.6-93.87s-19.63-93.87-25.6-93.87ZM283.31,298.41a180.24,180.24,0,0,1,6.15,39.91,59.2,59.2,0,0,0-59.4,5.52,231,231,0,0,0-5.86-45.5q15.5.33,31.8.33C265.33,298.67,274.38,298.56,283.31,298.41ZM264.53,435.2a42.67,42.67,0,1,1,42.67-42.67A42.66,42.66,0,0,1,264.53,435.2ZM25.6,285.87a239.05,239.05,0,0,1,8.53,72.53,239.05,239.05,0,0,1-8.53,72.53,239.05,239.05,0,0,1-8.53-72.53A239.05,239.05,0,0,1,25.6,285.87ZM42.84,432.38c4.67-13.53,8.36-36.18,8.36-74s-3.69-60.45-8.37-74a1496.9,1496.9,0,0,0,163.54,13.51,219.5,219.5,0,0,1,7,60.49c0,1.24,0,2.41-.05,3.6a59.13,59.13,0,0,0-2.75,55.91l-.37.91A1484.82,1484.82,0,0,0,42.84,432.4Zm191,62.55-6.23-14.33a8.52,8.52,0,0,0-11.18-4.44l-14.37,6.35,20-48A59.53,59.53,0,0,0,252.25,451Zm78.74-18.77a8.54,8.54,0,0,0-11.19,4.44l-6.31,14.19L276.81,451A59.75,59.75,0,0,0,307,434.51l20,47.79Zm172.08-41.39a1384.83,1384.83,0,0,0-165.54-15.36l-.61-1.46a59.4,59.4,0,0,0-11.5-67.3A237.87,237.87,0,0,0,301,298.08,1424.12,1424.12,0,0,0,484.69,282c4,6.72,10.24,33.32,10.24,76.38s-6.32,69.65-10.24,76.37Z"></path></g></g></svg>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h3 class="elementor-icon-box-title">
+					<span>
+						Placement Support and Mock Interviews					</span>
+				</h3>
+									<p class="elementor-icon-box-description">
+						We will help you get placed in great companies through our placements cell and our corporate relations.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-11e08f9b" data-id="11e08f9b" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-2f35b396 elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="2f35b396" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-grow">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M477.867,102.4c-18.825,0-34.133,15.309-34.133,34.133s15.309,34.133,34.133,34.133S512,155.358,512,136.533    C512,117.709,496.691,102.4,477.867,102.4z M477.867,153.6c-9.412,0-17.067-7.654-17.067-17.067    c0-9.412,7.654-17.067,17.067-17.067s17.067,7.654,17.067,17.067C494.933,145.946,487.279,153.6,477.867,153.6z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M34.133,384C15.309,384,0,399.309,0,418.133s15.309,34.133,34.133,34.133c18.825,0,34.133-15.309,34.133-34.133    S52.958,384,34.133,384z M34.133,435.2c-9.412,0-17.067-7.654-17.067-17.067s7.654-17.067,17.067-17.067    c9.412,0,17.067,7.654,17.067,17.067S43.546,435.2,34.133,435.2z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M461.321,113.186l-73.617-35.541c-4.25-2.057-9.344-0.265-11.392,3.977c-2.048,4.241-0.265,9.344,3.977,11.392    l73.617,35.541c1.195,0.58,2.458,0.853,3.703,0.853c3.174,0,6.221-1.775,7.688-4.83    C467.345,120.337,465.562,115.234,461.321,113.186z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M384,443.733c-18.825,0-34.133,15.309-34.133,34.133S365.175,512,384,512c18.825,0,34.133-15.309,34.133-34.133    S402.825,443.733,384,443.733z M384,494.933c-9.412,0-17.067-7.654-17.067-17.067S374.588,460.8,384,460.8    c9.412,0,17.067,7.654,17.067,17.067S393.412,494.933,384,494.933z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M367.454,454.52l-73.617-35.541c-4.25-2.057-9.344-0.273-11.392,3.977c-2.048,4.241-0.265,9.344,3.977,11.392    l73.617,35.541c1.195,0.58,2.458,0.853,3.703,0.853c3.174,0,6.221-1.775,7.689-4.83    C373.478,461.67,371.695,456.568,367.454,454.52z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M256,230.4c-18.825,0-34.133,15.309-34.133,34.133c0,18.825,15.309,34.133,34.133,34.133    c18.825,0,34.133-15.309,34.133-34.133C290.133,245.709,274.825,230.4,256,230.4z M256,281.6c-9.412,0-17.067-7.654-17.067-17.067    c0-9.412,7.654-17.067,17.067-17.067c9.412,0,17.067,7.654,17.067,17.067C273.067,273.946,265.412,281.6,256,281.6z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M240.998,242.142l-56.55-44.075c-3.721-2.876-9.079-2.236-11.981,1.485c-2.893,3.721-2.236,9.079,1.485,11.981    l56.55,44.075c1.562,1.212,3.405,1.801,5.24,1.801c2.543,0,5.052-1.126,6.741-3.285    C245.376,250.402,244.719,245.043,240.998,242.142z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M409.6,221.867c-51.755,0-93.867,42.112-93.867,93.867c0,51.755,42.112,93.867,93.867,93.867    c51.755,0,93.867-42.112,93.867-93.867C503.467,263.979,461.355,221.867,409.6,221.867z M409.6,392.533    c-42.351,0-76.8-34.449-76.8-76.8s34.449-76.8,76.8-76.8s76.8,34.449,76.8,76.8S451.951,392.533,409.6,392.533z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M409.6,256c-18.825,0-34.133,15.309-34.133,34.133c0,18.825,15.309,34.133,34.133,34.133    c18.825,0,34.133-15.309,34.133-34.133S428.425,256,409.6,256z M409.6,307.2c-9.412,0-17.067-7.654-17.067-17.067    c0-9.412,7.654-17.067,17.067-17.067c9.412,0,17.067,7.654,17.067,17.067C426.667,299.546,419.012,307.2,409.6,307.2z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M434.355,341.333h-49.51c-14.583,0-26.445,11.546-26.445,25.728v22.494c0,3.046,1.621,5.862,4.258,7.39    C376.96,405.222,393.19,409.6,409.6,409.6s32.64-4.378,46.942-12.655c2.637-1.519,4.258-4.344,4.258-7.381V367.07    C460.8,352.879,448.939,341.333,434.355,341.333z M443.733,384.469c-21.239,10.581-47.027,10.581-68.267,0V367.07    c0-4.779,4.207-8.67,9.378-8.67h49.51c5.171,0,9.378,3.891,9.378,8.67V384.469z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M204.8,324.267c-51.755,0-93.867,42.112-93.867,93.867S153.045,512,204.8,512c51.755,0,93.867-42.112,93.867-93.867    S256.555,324.267,204.8,324.267z M204.8,494.933c-42.351,0-76.8-34.449-76.8-76.8s34.449-76.8,76.8-76.8    c42.351,0,76.8,34.449,76.8,76.8S247.151,494.933,204.8,494.933z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M204.8,358.4c-18.825,0-34.133,15.309-34.133,34.133c0,18.825,15.309,34.133,34.133,34.133s34.133-15.309,34.133-34.133    C238.933,373.709,223.625,358.4,204.8,358.4z M204.8,409.6c-9.412,0-17.067-7.654-17.067-17.067    c0-9.412,7.654-17.067,17.067-17.067c9.412,0,17.067,7.654,17.067,17.067C221.867,401.946,214.212,409.6,204.8,409.6z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M229.555,443.733h-49.51c-14.583,0-26.445,11.546-26.445,25.728v22.494c0,3.046,1.621,5.862,4.258,7.39    C172.16,507.622,188.39,512,204.8,512s32.64-4.378,46.942-12.655c2.637-1.519,4.258-4.343,4.258-7.381V469.47    C256,455.279,244.139,443.733,229.555,443.733z M238.933,486.869c-21.24,10.581-47.027,10.581-68.267,0V469.47    c0-4.779,4.207-8.67,9.378-8.67h49.51c5.171,0,9.378,3.891,9.378,8.67V486.869z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M93.867,110.933C42.112,110.933,0,153.045,0,204.8c0,51.755,42.112,93.867,93.867,93.867    c51.755,0,93.867-42.112,93.867-93.867C187.733,153.045,145.621,110.933,93.867,110.933z M93.867,281.6    c-42.351,0-76.8-34.449-76.8-76.8c0-42.351,34.449-76.8,76.8-76.8c42.351,0,76.8,34.449,76.8,76.8    C170.667,247.151,136.218,281.6,93.867,281.6z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M93.867,145.067c-18.825,0-34.133,15.309-34.133,34.133s15.309,34.133,34.133,34.133    c18.825,0,34.133-15.309,34.133-34.133S112.691,145.067,93.867,145.067z M93.867,196.267c-9.412,0-17.067-7.654-17.067-17.067    s7.654-17.067,17.067-17.067c9.412,0,17.067,7.654,17.067,17.067S103.279,196.267,93.867,196.267z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M118.622,230.4h-49.51c-14.583,0-26.445,11.546-26.445,25.728v22.494c0,3.046,1.621,5.862,4.258,7.39    c14.302,8.277,30.532,12.655,46.942,12.655c16.41,0,32.64-4.378,46.942-12.655c2.637-1.519,4.258-4.344,4.258-7.381v-22.494    C145.067,241.946,133.205,230.4,118.622,230.4z M128,273.536c-21.239,10.581-47.027,10.581-68.267,0v-17.399    c0-4.779,4.207-8.67,9.378-8.67h49.51c5.171,0,9.378,3.891,9.378,8.67V273.536z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M298.667,0C246.912,0,204.8,42.112,204.8,93.867c0,51.755,42.112,93.867,93.867,93.867    c51.755,0,93.867-42.112,93.867-93.867C392.533,42.112,350.421,0,298.667,0z M298.667,170.667c-42.351,0-76.8-34.449-76.8-76.8    c0-42.351,34.449-76.8,76.8-76.8s76.8,34.449,76.8,76.8C375.467,136.218,341.018,170.667,298.667,170.667z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M298.667,34.133c-18.825,0-34.133,15.309-34.133,34.133s15.309,34.133,34.133,34.133S332.8,87.091,332.8,68.267    S317.491,34.133,298.667,34.133z M298.667,85.333c-9.412,0-17.067-7.654-17.067-17.067c0-9.412,7.654-17.067,17.067-17.067    s17.067,7.654,17.067,17.067C315.733,77.679,308.079,85.333,298.667,85.333z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M323.422,119.467h-49.51c-14.583,0-26.445,11.546-26.445,25.728v22.494c0,3.046,1.621,5.862,4.258,7.39    c14.302,8.277,30.532,12.655,46.942,12.655s32.64-4.378,46.942-12.655c2.637-1.519,4.258-4.344,4.258-7.381v-22.494    C349.867,131.012,338.005,119.467,323.422,119.467z M332.8,162.603c-21.239,10.581-47.027,10.581-68.267,0v-17.399    c0-4.779,4.207-8.67,9.378-8.67h49.51c5.171,0,9.378,3.891,9.378,8.67V162.603z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M219.827,88.311c-3.063-3.567-8.448-3.994-12.032-0.93l-59.136,50.603c-3.584,3.063-4.002,8.448-0.939,12.032    c1.69,1.971,4.079,2.987,6.485,2.987c1.963,0,3.934-0.674,5.547-2.057l59.136-50.603C222.473,97.28,222.891,91.895,219.827,88.311    z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M407.893,225.289l-51.2-68.267c-2.825-3.78-8.175-4.523-11.947-1.707c-3.772,2.825-4.531,8.175-1.707,11.938l51.2,68.267    c1.681,2.236,4.241,3.413,6.835,3.413c1.775,0,3.576-0.555,5.112-1.707C409.958,234.402,410.718,229.052,407.893,225.289z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M337.86,343.953c-2.825-3.772-8.175-4.531-11.947-1.707l-47.667,35.746c-3.772,2.825-4.531,8.175-1.707,11.938    c1.681,2.236,4.241,3.413,6.835,3.413c1.783,0,3.575-0.563,5.112-1.707l47.667-35.746    C339.925,353.067,340.685,347.716,337.86,343.953z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M119.467,409.6H59.733c-4.71,0-8.533,3.814-8.533,8.533s3.823,8.533,8.533,8.533h59.733c4.71,0,8.533-3.814,8.533-8.533    S124.177,409.6,119.467,409.6z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M93.867,0C75.042,0,59.733,15.309,59.733,34.133c0,18.825,15.309,34.133,34.133,34.133    c18.825,0,34.133-15.309,34.133-34.133C128,15.309,112.691,0,93.867,0z M93.867,51.2c-9.412,0-17.067-7.654-17.067-17.067    c0-9.412,7.654-17.067,17.067-17.067c9.412,0,17.067,7.654,17.067,17.067C110.933,43.546,103.279,51.2,93.867,51.2z"></path>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M93.867,51.2c-4.71,0-8.533,3.814-8.533,8.533v59.733c0,4.719,3.823,8.533,8.533,8.533c4.71,0,8.533-3.814,8.533-8.533    V59.733C102.4,55.014,98.577,51.2,93.867,51.2z"></path>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h3 class="elementor-icon-box-title">
+					<span>
+						Access to Digital Marketing Club					</span>
+				</h3>
+									<p class="elementor-icon-box-description">
+						Digital Marketing Club is where digital marketers meet and help each other out with questions.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ea3444f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ea3444f" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-672bd343" data-id="672bd343" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-fb2023b elementor-widget elementor-widget-heading" data-id="fb2023b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Testimonials​</h4>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-79feab41 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="79feab41" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1f627b97" data-id="1f627b97" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7f5303d9 elementor-widget elementor-widget-testimonial" data-id="7f5303d9" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper">
+							<div class="elementor-testimonial-content">I must say this Digital Deepak is the best mentor if you want to make your career in Digital Marketing, Freelancing. I am fortunate to be part of Digital Deepak Internship Program. Guys, if you are interested to learn Digital Marketing, you should watch FREE webinar. :)​</div>
+			
+						<div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
+				<div class="elementor-testimonial-meta-inner">
+											<div class="elementor-testimonial-image">
+							<img width="60" height="60" src="./cdt_files/photo.png" data-spai="1" class="attachment-full size-full" alt="" data-spai-upd="55">						</div>
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">Umesh Gutte</div>
+																			</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6346e07f elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating" data-id="6346e07f" data-element_type="widget" data-widget_type="star-rating.default">
+				<div class="elementor-widget-container">
+			
+		<div class="elementor-star-rating__wrapper">
+						<div class="elementor-star-rating" title="5/5" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating"><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i> <span itemprop="ratingValue" class="elementor-screen-only">5/5</span></div>		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-6e785815" data-id="6e785815" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-78ea90e8 elementor-widget elementor-widget-testimonial" data-id="78ea90e8" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper">
+							<div class="elementor-testimonial-content">You can trust them. Systematic way to convey the concepts.  Gives a adequate for assimilation of the key concepts. Earn money back is concept that works. It motivates you to ensure you do the exercises. All in all  a great experience. Thanks Digital Deepak!</div>
+			
+						<div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
+				<div class="elementor-testimonial-meta-inner">
+											<div class="elementor-testimonial-image">
+							<img width="60" height="60" src="./cdt_files/photo-1.png" data-spai="1" class="attachment-full size-full" alt="" data-spai-upd="55">						</div>
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name"><div style="text-align: center;"><span style="font-family: var( --e-global-typography-primary-font-family ), Sans-serif; font-weight: var( --e-global-typography-primary-font-weight ); text-align: left;">Vishal Ganeriwal</span><span style="font-family: var( --e-global-typography-primary-font-family ), Sans-serif; font-weight: var( --e-global-typography-primary-font-weight ); text-align: left;"></span></div></div>
+																			</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-7d07612c elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating" data-id="7d07612c" data-element_type="widget" data-widget_type="star-rating.default">
+				<div class="elementor-widget-container">
+			
+		<div class="elementor-star-rating__wrapper">
+						<div class="elementor-star-rating" title="5/5" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating"><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i> <span itemprop="ratingValue" class="elementor-screen-only">5/5</span></div>		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7c22f090" data-id="7c22f090" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4ace01e4 elementor-widget elementor-widget-testimonial" data-id="4ace01e4" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper">
+							<div class="elementor-testimonial-content">Digital Deepak is a top Digital Marketing expert in India.
+I learn a lot from him and right now I am a part of my Internship batch 6. it completely pooling me out of my comfort zone with every task completion..
+Thanks Deepak Sir.</div>
+			
+						<div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
+				<div class="elementor-testimonial-meta-inner">
+											<div class="elementor-testimonial-image">
+							<img width="60" height="60" src="./cdt_files/photo-2.png" data-spai="1" class="attachment-full size-full" alt="" data-spai-upd="55">						</div>
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">Divyesh Rana</div>
+																			</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-7fe9d004 elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating" data-id="7fe9d004" data-element_type="widget" data-widget_type="star-rating.default">
+				<div class="elementor-widget-container">
+			
+		<div class="elementor-star-rating__wrapper">
+						<div class="elementor-star-rating" title="5/5" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating"><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i> <span itemprop="ratingValue" class="elementor-screen-only">5/5</span></div>		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-59524234 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="59524234" data-element_type="section" id="Contact" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;,&quot;animation_delay&quot;:500}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-325d7a5c" data-id="325d7a5c" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-62a6cb53 elementor-widget elementor-widget-text-editor" data-id="62a6cb53" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Say Hello!</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-64dd71d elementor-widget elementor-widget-heading" data-id="64dd71d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-large">Get In Touch With Us</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5469301e elementor-hidden-phone elementor-widget elementor-widget-text-editor" data-id="5469301e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Having a marketing problem? Want to discuss the latest digital marketing changes? Looking for answers to your marketing questions? Or Just want to say hi. Don’t hesitate. Drop us a message.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-39e39d6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="39e39d6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7b9496c" data-id="7b9496c" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-2524e9e elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="2524e9e" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-mail-bulk"></i>						</span>
+										<span class="elementor-icon-list-text">Email: deepak@learntoday.com</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a8ce09d" data-id="a8ce09d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5ceea14 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5ceea14" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-phone-alt"></i>						</span>
+										<span class="elementor-icon-list-text">Phone: 9620289795 (WhatsApp)</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4d661f7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d661f7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-40b2cc1" data-id="40b2cc1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-e6f7e1a elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e6f7e1a" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-map-marker-alt"></i>						</span>
+										<span class="elementor-icon-list-text">2/652 A, Erumapalayam Chennai By-pass Road Salem Salem TN 636015 IN</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b71bccf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b71bccf" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-d8e0750" data-id="d8e0750" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-6495829 elementor-widget elementor-widget-text-editor" data-id="6495829" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><a href="https://learntoday.com/privacyandpolicy/">Privacy and Policy</a></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-bc2e77a" data-id="bc2e77a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-877736b elementor-widget elementor-widget-text-editor" data-id="877736b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><a href="https://learntoday.com/terms-and-condition/">Terms and Condition</a></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-aea15d9" data-id="aea15d9" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ea83320 elementor-widget elementor-widget-text-editor" data-id="ea83320" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><a href="https://learntoday.com/cancellation-and-refund-policy/">Cancellation and Refund Policy</a></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+			</div><!-- END .entry-content -->
+</article><!-- #post-37 -->
+		
+	</div><!-- #main .site-main -->
+	
+	
+			<footer id="colophon" class="site-footer" role="contentinfo" itemtype="http://schema.org/WPFooter" itemscope="itemscope">
+
+			
+<div id="sinatra-copyright" class="contained-separator">
+	<div class="si-container">
+		<div class="si-flex-row">
+
+			<div class="col-xs-12 center-xs col-md flex-basis-auto start-md"><div class="si-copyright-widget__text si-copyright-widget sinatra-all"><span>Copyright 2022 ©  All rights reserved LearnToday Digital Pvt. Ltd.</span></div><!-- END .si-copyright-widget --></div>
+			<div class="col-xs-12 center-xs col-md flex-basis-auto end-md"></div>
+
+		</div><!-- END .si-flex-row -->
+	</div>
+</div><!-- END #sinatra-copyright -->
+
+		</footer><!-- #colophon .site-footer -->
+	
+	
+</div><!-- END #page -->
+
+<a href="https://learntoday.com/#" id="si-scroll-top" class="si-smooth-scroll si-visible" title="Scroll to Top">
+	<span class="si-scroll-icon" aria-hidden="true">
+		<svg class="si-icon top-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M24.958 18.491l-8.008-8.008c-0.534-0.534-1.335-0.534-1.868 0l-8.008 8.008c-0.534 0.534-0.534 1.335 0 1.868s1.335 0.534 1.868 0l7.074-7.074 7.074 7.074c0.267 0.267 0.667 0.4 0.934 0.4s0.667-0.133 0.934-0.4c0.534-0.534 0.534-1.335 0-1.868z"></path></svg>		<svg class="si-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M24.958 18.491l-8.008-8.008c-0.534-0.534-1.335-0.534-1.868 0l-8.008 8.008c-0.534 0.534-0.534 1.335 0 1.868s1.335 0.534 1.868 0l7.074-7.074 7.074 7.074c0.267 0.267 0.667 0.4 0.934 0.4s0.667-0.133 0.934-0.4c0.534-0.534 0.534-1.335 0-1.868z"></path></svg>	</span>
+	<span class="screen-reader-text">Scroll to Top</span>
+</a><!-- END #sinatra-scroll-to-top -->
+
+<script id="spai-scripts-js-extra">
+var spai_settings = {"api_url":"https:\/\/cdn.shortpixel.ai\/spai\/w_%WIDTH%+q_lossy+ret_img","api_short_url":"https:\/\/cdn.shortpixel.ai\/spai\/ret_img","method":"src","crop":"1","lqip":"","lazy_threshold":"500","hover_handling":"","native_lazy":"","serve_svg":"1","debug":"","site_url":"https:\/\/learntoday.com","plugin_url":"https:\/\/learntoday.com\/wp-content\/plugins\/shortpixel-adaptive-images","version":"2.3.3","excluded_selectors":[],"eager_selectors":[],"noresize_selectors":[],"alter2wh":"","use_first_sizes":[],"active_integrations":{"nextgen":false,"modula":false,"elementor":true,"elementor-addons":false,"viba-portfolio":false,"envira":false,"everest":false,"wp-bakery":false,"woocommerce":false,"wpc-variations":false,"foo":false,"oxygen":false,"slider-revolution":false,"custom-facebook-feed":false,"smart-slider":false,"real3d-flipbook":false,"wp-grid-builder":false,"the-grid":false,"social-pug":false,"content-views":false,"acf":false,"soliloquy":false,"wp-rocket":{"lazyload":false,"css-filter":true,"minify-css":true,"defer-all-js":false},"swift-performance":false,"imagify":{"active":false},"wp-fastest-cache":false,"litespeed-cache":false,"w3-total-cache":false,"wp-optimize":false,"theme":"Sinatra"},"parse_css_files":"","lazy_bg_style":"","backgrounds_max_width":"1920","sep":"+","webp":"1","extensions_to_nextgenimg":{"png":true,"jpg":true,"gif":true},"sniper":"https:\/\/learntoday.com\/wp-content\/plugins\/shortpixel-adaptive-images\/assets\/img\/target.cur","affected_tags":"{\"link\":1}","ajax_url":"https:\/\/learntoday.com\/wp-admin\/admin-ajax.php","excluded_paths":["cmVnZXg6L1wvXC8oW15cL10qXC58KWdyYXZhdGFyLmNvbVwvLw=="]};
+</script>
+<script data-cfasync="false" src="./cdt_files/ai-2.0.min.js.download" id="spai-scripts-js"></script>
+<script id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/learntoday.com","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script id="sinatra-js-js-extra">
+var sinatra_vars = {"ajaxurl":"https:\/\/learntoday.com\/wp-admin\/admin-ajax.php","nonce":"efaa83730c","responsive-breakpoint":"960","sticky-header":{"enabled":false,"hide_on":[""]},"strings":{"comments_toggle_show":"Leave a Comment","comments_toggle_hide":"Hide Comments"}};
+</script>
+<script src="./cdt_files/sinatra.min.js.download" id="sinatra-js-js"></script>
+<script src="./cdt_files/webpack.runtime.min.js.download" id="elementor-webpack-runtime-js"></script>
+<script src="./cdt_files/frontend-modules.min.js.download" id="elementor-frontend-modules-js"></script>
+<script src="./cdt_files/waypoints.min.js.download" id="elementor-waypoints-js"></script>
+<script src="./cdt_files/core.min.js.download" id="jquery-ui-core-js"></script>
+<script src="./cdt_files/swiper.min.js.download" id="swiper-js"></script>
+<script src="./cdt_files/share-link.min.js.download" id="share-link-js"></script>
+<script src="./cdt_files/dialog.min.js.download" id="elementor-dialog-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.6.5","is_static":false,"experimentalFeatures":{"e_import_export":true,"e_hidden_wordpress_widgets":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/learntoday.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":37,"title":"Home%20-%20LearnToday%20Digital%20Pvt.%20Ltd.","excerpt":"","featuredImage":false}};
+</script>
+<script src="./cdt_files/frontend.min.js.download" id="elementor-frontend-js"></script>
+<script src="./cdt_files/preloaded-modules.min.js.download" id="preloaded-modules-js"></script>
+	<script>
+	!function(){var e=-1<navigator.userAgent.toLowerCase().indexOf("webkit"),t=-1<navigator.userAgent.toLowerCase().indexOf("opera"),n=-1<navigator.userAgent.toLowerCase().indexOf("msie");(e||t||n)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var e,t=location.hash.substring(1);/^[A-z0-9_-]+$/.test(t)&&(e=document.getElementById(t))&&(/^(?:a|select|input|button|textarea)$/i.test(e.tagName)||(e.tabIndex=-1),e.focus())},!1)}();
+	</script>
+	
+<script>"use strict";var wprRemoveCPCSS=function wprRemoveCPCSS(){var elem;document.querySelector('link[data-rocket-async="style"][rel="preload"]')?setTimeout(wprRemoveCPCSS,200):(elem=document.getElementById("rocket-critical-css"))&&"remove"in elem&&elem.remove()};window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPT%20Serif%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /><link rel="stylesheet" href="https://learntoday.com/wp-content/cache/min/1/aea771c0e5a9dca622e647359a513af2.css" media="all" data-minify="1" /></noscript>
+
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1651570000 --><span id="elementor-device-mode" class="elementor-screen-only"></span><svg style="display: none;" class="e-font-icon-svg-symbols"></svg></body></html>
